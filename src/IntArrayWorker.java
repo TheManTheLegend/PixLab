@@ -12,6 +12,30 @@ public class IntArrayWorker {
 		matrix = theMatrix;
 	}
 
+	public int getCount(int i) {
+		int count = 0;
+		for (int[] rowArray : matrix) {
+			for (int item : rowArray) {
+				if (item == i){
+					count = count + 1;
+				}
+			}
+		}
+		return count;
+	}
+	public int getLargest() {
+		int largest = 0;
+		for (int[] rowArray : matrix) {
+			for (int item : rowArray) {
+				if (item > largest){
+					largest = item;
+				}
+			}
+		}
+		return largest;
+	}
+
+
 	/**
 	 * Method to return the total
 	 * 
@@ -38,6 +62,16 @@ public class IntArrayWorker {
 			for (int item : rowArray) {
 				total = total + item;
 			}
+		}
+		return total;
+	}
+
+	public int getColTotal(int i) {
+		int total = 0;
+		for (int[] rowArray : matrix) {
+			
+				total = total + rowArray[i];
+			
 		}
 		return total;
 	}
