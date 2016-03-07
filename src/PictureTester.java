@@ -25,6 +25,14 @@ public class PictureTester
     beach.explore();
   }
   
+  public static void testFixUnderwater()
+  {
+    Picture beach = new Picture("water.jpg");
+    beach.explore();
+    beach.fixUnderwater();
+    beach.explore();
+  }
+  
   
   public static void testNegate()
   {
@@ -88,7 +96,8 @@ public class PictureTester
 //    testKeepOnlyRed();
 //    testKeepOnlyGreen();
 //	  testNegate();
-	  testGrayscale();
+//	  testGrayscale();
+	  testFixUnderwater();
 //    testFixUnderwater();
 //    testMirrorVertical();
 //    testMirrorTemple();
