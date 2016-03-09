@@ -108,6 +108,28 @@ public class PictureTester
     temple.explore();
   }
   
+  public static void testSecondCopy()
+  {
+    Picture temple = new Picture("collage.jpg");
+    Picture derp = new Picture("beach.jpg");
+    temple.explore();
+    temple.secondCopy(derp, 200, 50, 300, 100);
+    temple.explore();
+  }
+  
+  public static void testMyCollage()
+  {
+    Picture temple = new Picture("collage.jpg");
+    Picture one = new Picture("beach.jpg");
+    Picture two = new Picture("butterfly1.jpg");
+    Picture three = new Picture("flower1.jpg");
+    temple.explore();
+    temple.myCollage(one, two, three);
+    temple.explore();
+  }
+  
+ 
+  
   /** Method to test the collage method */
   public static void testCollage()
   {
@@ -145,10 +167,11 @@ public class PictureTester
 //    testMirrorDiaganol();
 //    testMirrorTemple();
 //    testMirrorArms();
-    testMirrorGull();
+//    testMirrorGull();
 //	  testMirrorDiagonal();
 //    testCollage();
-//    testCopy();
+//    testSecondCopy();
+	  testMyCollage();
 //    testEdgeDetection();
 //    testEdgeDetection2();
 //    testChromakey();
